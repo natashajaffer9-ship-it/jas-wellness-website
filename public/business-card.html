@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Cards</title>
+    <style>
+        .business-card {
+            width: 50%;
+            height: 150px;
+            border: 1px solid #000;
+            margin: 20px;
+            display: inline-block;
+            vertical-align: top;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        @media print {
+            @page { margin: 0; }
+            body { margin: 20mm; }
+        }
+    </style>
+</head>
+<body>
+    <div class="business-card">
+        <h1>Jas Wellness</h1>
+        <p>Your Tagline Here</p>
+        <p>Contact: info@jaswellness.com</p>
+        <p>Phone: (555) 123-4567</p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://calendly.com/your-calendly-link&size=100x100" alt="QR Code">
+    </div>
+    <!-- Repeat the above div for additional cards -->
+</body>
+</html>
